@@ -1,0 +1,32 @@
+﻿@page
+@model TuProyecto.Pages.IndexModel
+
+<h2>Lista de Tareas</h2>
+<p>
+    <a asp-page="Create" class="btn btn-success">Nueva Tarea</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Título</th>
+            <th>Completada</th>
+            <th>Creada</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var task in Model.Tasks)
+        {
+            <tr>
+                <td>@task.Title</td>
+                <td>@(task.IsCompleted ? "Sí" : "No")</td>
+                <td>@task.CreatedAt.ToString("g")</td>
+                <td>
+                    <a asp-page="Edit" asp-route-id="@task.Id" class="btn btn-primary">Editar</a>
+                    <a asp-page="Delete" asp-route-id="@task.Id" class="btn btn-danger">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
