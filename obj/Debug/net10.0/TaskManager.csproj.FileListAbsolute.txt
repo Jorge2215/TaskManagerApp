@@ -573,10 +573,10 @@ C:\Users\Jorgito\source\repos\TaskManager\obj\Debug\net10.0\staticwebassets.buil
 C:\Users\Jorgito\source\repos\TaskManager\obj\Debug\net10.0\staticwebassets.development.json
 C:\Users\Jorgito\source\repos\TaskManager\obj\Debug\net10.0\staticwebassets.build.endpoints.json
 C:\Users\Jorgito\source\repos\TaskManager\obj\Debug\net10.0\swae.build.ex.cache
-C:\Users\Jorgito\source\repos\TaskManager\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
 C:\Users\Jorgito\source\repos\TaskManager\obj\Debug\net10.0\TaskMana.F3FB485A.Up2Date
 C:\Users\Jorgito\source\repos\TaskManager\obj\Debug\net10.0\TaskManager.dll
 C:\Users\Jorgito\source\repos\TaskManager\obj\Debug\net10.0\refint\TaskManager.dll
 C:\Users\Jorgito\source\repos\TaskManager\obj\Debug\net10.0\TaskManager.pdb
 C:\Users\Jorgito\source\repos\TaskManager\obj\Debug\net10.0\TaskManager.genruntimeconfig.cache
 C:\Users\Jorgito\source\repos\TaskManager\obj\Debug\net10.0\ref\TaskManager.dll
+C:\Users\Jorgito\source\repos\TaskManager\obj\Debug\net10.0\TaskManager.sourcelink.json
