@@ -1,32 +1,37 @@
 ﻿@page
 @model TuProyecto.Pages.IndexModel
 
-<h2>Lista de Tareas</h2>
+<h2 class="text-primary">Lista de Tareas</h2>
+
 <p>
-    <a asp-page="Create" class="btn btn-success">Nueva Tarea</a>
+    <a asp-page="Create" class="btn btn-success mb-3">
+        <i class="bi bi-plus-circle"></i> Nueva Tarea
+    </a>
 </p>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>Título</th>
-            <th>Completada</th>
-            <th>Creada</th>
-            <th>Acciones</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var task in Model.Tasks)
-        {
-            <tr>
-                <td>@task.Title</td>
-                <td>@(task.IsCompleted ? "Sí" : "No")</td>
-                <td>@task.CreatedAt.ToString("g")</td>
-                <td>
-                    <a asp-page="Edit" asp-route-id="@task.Id" class="btn btn-primary">Editar</a>
-                    <a asp-page="Delete" asp-route-id="@task.Id" class="btn btn-danger">Eliminar</a>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+<div class="row">
+    @foreach (var task in Model.Tasks)
+    {
+        <div class="col-md-4">
+            <div class="card mb-3 border-success shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title text-success">@task.Title</h5>
+                    <p class="card-text text-muted">
+                        Creada: @task.CreatedAt.ToString("g")
+                    </p>
+                    <span class="badge @(task.IsCompleted ? "bg-success" : "bg-warning text-dark")">
+                        @(task.IsCompleted ? "Completada" : "Pendiente")
+                    </span>
+                    <div class="mt-3">
+                        <a asp-page="Edit" asp-route-id="@task.Id" class="btn btn-primary btn-sm">
+                            <i class="bi bi-pencil"></i> Editar
+                        </a>
+                        <a asp-page="Delete" asp-route-id="@task.Id" class="btn btn-danger btn-sm">
+                            <i class="bi bi-trash"></i> Eliminar
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
