@@ -4,6 +4,8 @@ using TaskManager.Data;
 //By Jorgito
 var builder = WebApplication.CreateBuilder(args);
 
+//Comentario Jorge
+
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
 builder.Services.AddDbContext<AppDbContext>(options =>
