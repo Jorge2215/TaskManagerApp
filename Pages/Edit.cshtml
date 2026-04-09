@@ -4,6 +4,7 @@
 <h2>Editar Tarea</h2>
 
 <form method="post">
+    <input type="hidden" asp-for="Task.Id" />
     <div class="form-group">
         <label for="Title">Título</label>
         <input asp-for="Task.Title" class="form-control" />
