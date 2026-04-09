@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:   # 👈 habilita ejecución manual desde la pestaña Actions
 
 jobs:
   build-and-deploy:
