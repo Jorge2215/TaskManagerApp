@@ -26,7 +26,3 @@ Y ahí sí ponés la cadena completa con la contraseña:
 
 El runtime de .NET detecta automáticamente que debe usar esa variable y reemplaza el valor de appsettings.json
 
-Database:
-Server Axure SQL: azuresqlserverjv.database.windows.net
-User: TMUser
-Password: CodingWolf2026!!
