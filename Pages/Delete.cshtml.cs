@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using TaskManager.Data;
 
 
-namespace TuProyecto.Pages
+namespace TaskManager.Pages
 {
     public class DeleteModel : PageModel
     {
