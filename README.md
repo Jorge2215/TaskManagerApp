@@ -22,7 +22,7 @@ Agregás una variable de entorno con nombre:
 	ConnectionStrings__DefaultConnection
 
 Y ahí sí ponés la cadena completa con la contraseña:
-	Server=azuresqlserverjv.database.windows.net;Database=TaskManagerDB;User Id=TMUser;Password=CodingWolf2026!!;Encrypt=True;
+	Server=azuresqlserverjv.database.windows.net;Database=TaskManagerDB;User Id=TMUser;Password=<PASSWORD>;Encrypt=True;
 
 El runtime de .NET detecta automáticamente que debe usar esa variable y reemplaza el valor de appsettings.json
 
