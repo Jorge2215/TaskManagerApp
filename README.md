@@ -6,7 +6,7 @@ dotnet user-secrets init
 (Esto agrega un UserSecretsId en .csproj)
 
 2.Guardar la cadena de conexión completa como secreto
-dotnet user-secrets set "ConnectionStrings:DefaultConnection" "Server=azure-sql-pampa.database.windows.net;Database=TaskManagerDB;User Id=DBAdmin;Password=MiPassword;Encrypt=True;"
+dotnet user-secrets set "ConnectionStrings:DefaultConnection" "Server=azuresqlserverjv.database.windows.net;Database=TaskManagerDB;User Id=TMUser;Password=CodingWolf2026!!;Encrypt=True;"
 (Esto guarda el Connection String en el Store de Secrets)
 
 3.Listar los Secrets del Store
@@ -22,6 +22,11 @@ Agregás una variable de entorno con nombre:
 	ConnectionStrings__DefaultConnection
 
 Y ahí sí ponés la cadena completa con la contraseña:
-	Server=azure-sql-pampa.database.windows.net;Database=TaskManagerDB;User Id=DBAdmin;Password=Password;Encrypt=True;
+	Server=azuresqlserverjv.database.windows.net;Database=TaskManagerDB;User Id=TMUser;Password=CodingWolf2026!!;Encrypt=True;
 
 El runtime de .NET detecta automáticamente que debe usar esa variable y reemplaza el valor de appsettings.json
+
+Database:
+Server Axure SQL: azuresqlserverjv.database.windows.net
+User: TMUser
+Password: CodingWolf2026!!
